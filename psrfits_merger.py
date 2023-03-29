@@ -229,10 +229,10 @@ def print_headObs(headObs):
     headObs_str = str(headObs)
     headObs_length = len(headObs_str) - len(headObs_str) % param_length
     beg_param = np.linspace(
-        0, headObs_length - param_length, (headObs_length / param_length)
+        0, headObs_length - param_length, num=int(headObs_length / param_length)
     )
     end_param = np.linspace(
-        param_length, headObs_length, (headObs_length / param_length)
+        param_length, headObs_length, num=int(headObs_length / param_length)
     )
     for i in range(len(beg_param)):
         print((headObs_str[int(beg_param[i]) : int(end_param[i])]))
