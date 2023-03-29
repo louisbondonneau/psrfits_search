@@ -86,7 +86,8 @@ def extract_data_array(fileName):
     old_data = old_data.astype("float32")
     old_scale = old_scale.astype("float32")
     old_offset = old_offset.astype("float32")
-    for bin in range(line_lenght):
+    line_length = old_data.shape[2]
+    for bin in range(line_length):
         old_data[:, bin, :, :, 0] = old_data[:, bin, :, :, 0] * old_scale + old_offset
     return old_data
 
