@@ -607,9 +607,9 @@ def fits_maker(
 
 # CHECKING INPUT PARAMETERS
 
-if len(args.INPUT_ARCHIVE) < 2:
-    print("\nNeed at least tow FITS files to work.\n")
-    sys.exit()
+# if len(args.INPUT_ARCHIVE) < 2:
+#     print("\nNeed at least tow FITS files to work.\n")
+#     sys.exit()
 
 
 # DATA EXTRACTION OF THE PREVIOUS FITS
