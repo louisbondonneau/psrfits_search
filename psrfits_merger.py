@@ -1,8 +1,3 @@
-#                RESCALE TIME
-#    Resize data array extracted from a FITS file to a new number of rows.
-#    Used to decrease the time lapse of a block for a involve the rfifind processing.
-
-
 # MODULES
 
 import numpy as np
