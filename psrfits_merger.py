@@ -15,7 +15,7 @@ import os
 # ARGUMENTS LIST
 
 parser = arg.ArgumentParser(
-    description="merge 2 fits files in the frequency direction. And transforme the 32 bits data to 8 bits using scales and offsets. Do not forget to use the option -scloffs in dspsr!!"
+    description="Merge 2 fits files in the frequency direction. And transform the 32 bits data to 8 bits using scales and offsets. Do not forget to use the option -scloffs in dspsr!"
 )
 
 parser.add_argument(
@@ -23,7 +23,7 @@ parser.add_argument(
     dest="newFileName",
     type=str,
     help="Name of the new FITS file to write.",
-    default="dont_forget_the_name.fits",
+    required=True,
 )
 parser.add_argument("-ds", dest="ds", type=int, default=1, help="downsample value.")
 parser.add_argument(
